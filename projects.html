@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projects.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+
+    <h1>Welcome to the Projects Page</h1>
+    <div class="container">
+      <div class="card">
+        <a href="https://junayd-mo.github.io/memory-game-/">Memory Game</a>
+        <div id="memory-image-container">
+          <div id="memory-image"></div>
+          <p>
+            This memory game made with HTML, CSS and JavaScript. <br />
+            This is where I learnt how to use asynchronous functions and
+            promises.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Weather app</h2>
+        <div id="weather-image-container">
+          <div id="weather-image"></div>
+          <p>
+            This is a Live weather application that allows users to search the
+            weather conditions of any location. <br /><br />
+            It was created using python, openweathermap API and the Flask
+            webframe to create the UI. <br />
+            <br />
+            This project introduced me to the world of APIs and how to use them
+            in future projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Database app</h2>
+        <div id="database-image-container">
+          <div id="database-image"></div>
+          <p>
+            This is an employee management system which allows users to Create,
+            Read, Update and Delete Employees which is saved onto a local
+            database. <br />
+            <br />
+            This application was made using Python, SQLite3, Bootstrap and the
+            Flask webframe. <br />
+            <br />
+            This Project taught me how to use backend datastructures and how to
+            manipulate them.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="https://junayd-mo.github.io/websiteClone-task/"
+          >Website Clone</a
+        >
+        <p></p>
+        <a href="https://www.flickr.com/">Original Website</a>
+        <div id="website-image-container">
+          <div id="website-image"></div>
+          <p>
+            This website clone was created to practice and show off my HTML and
+            CSS skills. <br />
+            <br />
+            In this project I learnt how to utalise the inspect tool on chrome
+            to get a accurate sizes, fonts and more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
