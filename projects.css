@@ -1,6 +1,10 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
 h1 {
   color: white;
   text-align: center;
+  text-decoration: underline;
 }
 
 a {
@@ -13,21 +17,41 @@ a:hover {
   color: #00abf0;
 }
 .card {
-  background-color: blue;
-  height: 500px;
-  width: 20vw;
+  background-color: rgba(0, 0, 105, 0.482);
+  height: 300px;
+  width: 60vw;
   text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card p {
+  color: white;
 }
 .container {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  height: 90%;
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+.weather {
+  margin-left: 570px;
+}
+
+.database {
+  margin-left: 570px;
 }
 
 #memory-image {
-  width: 268px;
-  height: 209px;
+  width: 350px;
+  height: 273px;
   background-image: url(memoryGame.png);
   background-repeat: no-repeat;
 }
@@ -41,11 +65,12 @@ a:hover {
 }
 
 #weather-image {
-  width: 139px;
-  height: 209px;
+  width: 200px;
+  height: 280px;
   background-image: url(WetherApp.png);
   background-repeat: no-repeat;
 }
+
 #weather-image-container {
   width: 100%;
   height: 100%;
@@ -56,11 +81,13 @@ a:hover {
 }
 
 #database-image {
-  width: 268px;
-  height: 130px;
+  width: 398px;
+  height: 200px;
   background-image: url(Database.png);
   background-repeat: no-repeat;
+  margin: 10px;
 }
+
 #database-image-container {
   width: 100%;
   height: 100%;
@@ -81,12 +108,29 @@ a:hover {
 }
 
 #website-image {
-  width: 268px;
-  height: 130px;
+  width: 489px;
+  height: 243px;
   background-image: url(webclone.png);
   background-repeat: no-repeat;
+  margin: 10px;
 }
 #website-image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#inventory-image {
+  width: 400px;
+  height: 200px;
+  background-image: url(inventory.png);
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+#winventory-image-container {
   width: 100%;
   height: 100%;
   display: flex;

@@ -4,6 +4,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="projects.css" />
     <title>Projects</title>
   </head>
@@ -18,21 +19,50 @@
 
     <h1>Welcome to the Projects Page</h1>
     <div class="container">
-      <div class="card">
-        <a href="https://junayd-mo.github.io/memory-game-/">Memory Game</a>
+      <div
+        class="card memory"
+        data-aos="fade-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <div id="memory-image-container">
           <div id="memory-image"></div>
+        </div>
+        <div class="card-text">
+          <a href="https://junayd-mo.github.io/memory-game-/"
+            >Memory Game (link)</a
+          >
           <p>
-            This memory game made with HTML, CSS and JavaScript. <br />
+            This is a memory game where the player has to follow the pattern,
+            every round the pattern is the same except, it gets longer as you
+            go! <br />
+            This game was made using HTML, CSS and JavaScript.
+            <br />
             This is where I learnt how to use asynchronous functions and
             promises.
           </p>
         </div>
       </div>
-      <div class="card">
-        <h2>Weather app</h2>
+      <div
+        class="card weather"
+        data-aos="fade-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <div id="weather-image-container">
           <div id="weather-image"></div>
+        </div>
+        <div class="card-text">
+          <h2>Weather app</h2>
+
           <p>
             This is a Live weather application that allows users to search the
             weather conditions of any location. <br /><br />
@@ -45,10 +75,51 @@
         </div>
       </div>
 
-      <div class="card">
-        <h2>Database app</h2>
+      <div
+        class="card clone"
+        data-aos="fade-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <div id="website-image-container">
+          <div id="website-image"></div>
+        </div>
+        <div class="card-text">
+          <a href="https://junayd-mo.github.io/websiteClone-task/"
+            >Website Clone (link) /</a
+          >
+
+          <a href="https://www.flickr.com/">Original Website (link) </a>
+          <p>
+            This website clone was created to practice and show off my HTML and
+            CSS skills. <br />
+            <br />
+            In this project I learnt how to utalise the inspect tool on chrome
+            to get a accurate sizes, fonts and more.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="card database"
+        data-aos="fade-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <div id="database-image-container">
           <div id="database-image"></div>
+        </div>
+        <div class="card-text">
+          <h2>Database app</h2>
+
           <p>
             This is an employee management system which allows users to Create,
             Read, Update and Delete Employees which is saved onto a local
@@ -62,23 +133,44 @@
           </p>
         </div>
       </div>
-      <div class="card">
-        <a href="https://junayd-mo.github.io/websiteClone-task/"
-          >Website Clone</a
-        >
-        <p></p>
-        <a href="https://www.flickr.com/">Original Website</a>
-        <div id="website-image-container">
-          <div id="website-image"></div>
+
+      <div
+        class="card inventory"
+        data-aos="fade-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
+        <div id="invenory-image-container">
+          <div id="inventory-image"></div>
+        </div>
+        <div class="card-text">
+          <h2>Inventory Manager App</h2>
+
           <p>
-            This website clone was created to practice and show off my HTML and
-            CSS skills. <br />
+            This was an application I made part of my computer science
+            coursework.
             <br />
-            In this project I learnt how to utalise the inspect tool on chrome
-            to get a accurate sizes, fonts and more.
+            <br />
+
+            It is an app that allows business owners track and manage their
+            inventory easily. It also has special features such as the analysis
+            section which graphs sales against other items.
+            <br />
+            <br />
+            This was made using Python as the main programming language, SQLite3
+            as the backend datastructure, Tkinter as the UI, Matplotlib for data
+            representation and pandas for data manipulation.
           </p>
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
